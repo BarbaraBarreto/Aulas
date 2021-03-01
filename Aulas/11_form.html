@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Doctype informa ao agente de usuário a versão
+do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+           <title>Login</title>
+           <meta charset="utf-8">
+           <meta name="author" content="Bárbara">
+           <meta name="description" content="lista de documentos">
+           <meta name="keywords" content="html5, tecnlogia">
+           <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <h1>Login</h1>
+
+        <form action="#" method="POST" class="formLogin">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label>Emaiil</label>
+                <input type="email" required placeholder="Digite um email válido">
+
+                <label>Número de filhos</label>
+                <input type="number" min="0" max="1000">
+
+                <label>Nascimento</label>
+                <input type="date" min="2020-09-21" max="2030-01-30">
+
+                <p>Sexo:</p>
+                <label><input type="radio" name="sexo" value="M"> Masculino</label>
+                <label><input type="radio" name="sexo" value="F"> Feminino</label>
+                <label><input type="radio" name="sexo" value="N"> Prefiro não informar</label>
+                <input type="hidden" name="expira" value="2020-12-30">
+
+                <label>Estado:</label>
+                <select name="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+                <label><input type="checkbox" name="html" value="html">HTML</label>
+
+                <legend>Área de interesse</legend>
+                <label><input type="checkbox" name="css" value="css">CSS</label>
+
+                <legend>Área de interesse</legend>
+                <label><input type="checkbox" name="js" value="js">JavaScript</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea style="resize: none;" name="msg" cols="30" rows="5" maxlength="15"></textarea>
+
+                <textarea style="resize: none;" name="contrato" cols="30" rows="5"readonly>Aqui entra o texto do contrato que precisa ser aceito</textarea>
+                <label><input type="checkbox">Li e aceito</label>
+
+                <input type="range" min="0" max="10" step="2">
+                <input type="time">
+                <input type="color">
+
+                <select>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                    <option>Opção 4</option>
+                </select>
+                
+            </fieldset>
+
+              <input type="submit" value="mandar">
+              <input type="button" value="button">
+              <input type="reset" value="reset">
+            
+        </form>
+
+    </body>
+</html>
